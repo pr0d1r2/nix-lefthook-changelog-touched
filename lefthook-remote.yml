@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    changelog-touched:
+      run: timeout ${LEFTHOOK_CHANGELOG_TOUCHED_TIMEOUT:-30} lefthook-changelog-touched {staged_files}
